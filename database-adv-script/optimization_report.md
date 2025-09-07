@@ -1,3 +1,7 @@
+Limit results for pagination.
+Select only required columns (avoid SELECT *).
+Ensure proper indexes are used for joins and ordering.
+
 -- Optimized query for better performance
 SELECT 
     b.booking_id,
