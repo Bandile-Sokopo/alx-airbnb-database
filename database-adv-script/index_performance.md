@@ -16,6 +16,7 @@ CREATE INDEX idx_property_location ON Property(location);
 -- Index on Property.pricepernight for price range queries
 CREATE INDEX idx_property_price ON Property(pricepernight);
 
+EXPLAIN ANALYZE
 SELECT u.first_name, u.last_name, b.booking_id, p.name AS property_name
 FROM Booking b
 JOIN User u ON b.user_id = u.user_id
